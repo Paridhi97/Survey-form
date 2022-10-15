@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alkalami&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+    <title>Survey Form</title>
+</head>
+
+<body>
+    <form action="">
+        <h1>SURVEY FORM</h1>
+
+        <div class="form-group">
+            <label for="name">Name: </label>
+            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-group">
+            <label for="email">Email: </label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+        </div>
+        <div class="form-group">
+            <label for="contact">Contact Number: </label>
+            <input type="number" class="form-control" id="contact" placeholder="Enter your contact number" required>
+        </div>
+        <div class="form-group">
+            <label for="address">Address: </label>
+            <input type="text" class="form-control" id="addresss" placeholder="Enter your address">
+        </div>
+        <div class="form-group">
+            <label for="gender">Gender: </label>
+            <input type="radio" class="form-control" id="male">Male
+            <input type="radio" class="form-control" id="female">Female
+            <input type="radio" class="form-control" id="other">Other
+        </div>
+        <div class="form-group">
+            <p>Which is the highest level of education you have completed?</p>
+            <select class="form-control" id="options" required>
+                <option value="" disabled selected>Select your education level</option>
+                <option value="less education">Less than high school</option>
+                <option value="school">High school</option>
+                <option value="college">College/University</option>
+                <option value="diploma">Collge Diploma</option>
+                <option value="undergraduate">Undergraduate</option>
+                <option value="graduate">Graduate</option>
+                <option value="not say">Prefer not to say</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <p>How much do you like this website?</p>
+            <div class="star-icon">
+                <input type="radio" id="rate5">
+                <label for="rate5" class="fa fa-star"></label>
+                <input type="radio" id="rate4">
+                <label for="rate4" class="fa fa-star"></label>
+                <input type="radio" id="rate3">
+                <label for="rate3" class="fa fa-star"></label>
+                <input type="radio" id="rate2">
+                <label for="rate2" class="fa fa-star"></label>
+                <input type="radio" id="rate1">
+                <label for="rate1" class="fa fa-star"></label>
+            </div>
+        </div>
+        <div class="form-group">
+            <p>What do you like the most in this website?</p>
+            <p><input type="checkbox" class="form-control" id="colors">Colors</p>
+            <p><input type="checkbox" class="form-control" id="fonts">Fonts</p>
+            <p><input type="checkbox" class="form-control" id="layout">Layout</p>
+            <p><input type="checkbox" name="form-control" id="content">Content</p>
+        </div>
+        <div class="form-group">
+            <p>Any suggestions regarding improvement of website?</p>
+            <textarea name="" id="" cols="60" rows="10" placeholder="Enter your comments here....."></textarea>
+        </div>
+        <button>Submit</button>
+    </form>
+    
+</body>
+
+</html>
